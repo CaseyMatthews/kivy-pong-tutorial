@@ -29,7 +29,7 @@ With pipenv, create a virtual environment in the project's directory using the r
 ##### Note for IDEs
 If your IDE is not resolving packages installed via pipenv, then you may need to configure it to use the python interpreter inside the pipenv virtual environment.
 
-vscode: <em>\<ctrl\> + \<shift\> + p</em> -> `>Python select interpreter`
+<em>vscode:</em> `CTRL + SHIFT + P`, `>Python select interpreter`
 
 ---
 
