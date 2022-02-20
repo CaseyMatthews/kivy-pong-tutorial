@@ -47,3 +47,7 @@ If your IDE is not resolving packages installed via pipenv, then you may need to
 | Check your installed dependencies for security vulnerabilities | `pipenv check`          |
 | Install a local setup.py into your virtual environment/Pipfile | `pipenv install -e .`   |
 | Use a lower-level pip command                                  | `pipenv run pip freeze` |
+
+#### Run the App
+
+Terminal: `python main.py`
