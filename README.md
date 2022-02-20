@@ -4,7 +4,7 @@ This repo was set up to demonstrate how to build, share, and package a kivy pyth
 
 ---
 
-### Set UP
+### Set Up
 
 #### Ensure Correct Version of Python
 
@@ -25,6 +25,11 @@ With pipenv, create a virtual environment in the project's directory using the r
 2. Navigate to the project directory.
 
 3. Initialize the pipenv virtual environment: `pipenv install --python path/to/python/install/python.exe`. Replace the path with python's install location as previously noted.
+
+##### Note for IDEs
+If your IDE is not resolving packages installed via pipenv, then you may need to configure it to use the python interpreter inside the pipenv virtual environment.
+
+vscode: <em>\<ctrl\> + \<shift\> + p</em> -> `>Python select interpreter`
 
 ---
 
