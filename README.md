@@ -26,6 +26,8 @@ With pipenv, create a virtual environment in the project's directory using the r
 
 3. Initialize the pipenv virtual environment: `pipenv install --python path/to/python/install/python.exe`. Replace the path with python's install location as previously noted.
 
+4. Install missing Kivy dependency (required for bundling): `pipenv install kivy_deps.sdl2`
+
 ##### Note for IDEs
 If your IDE is not resolving packages installed via pipenv, then you may need to configure it to use the python interpreter inside the pipenv virtual environment.
 
@@ -57,3 +59,5 @@ Terminal: `python main.py`
 Terminal: `python -m PyInstaller Pong.spec`
 
 If pyinstaller complains about missing kivy dependencies, you may need to install explicitly to your virtual environment (e.g. `pipenv install kivy_deps.sdl2`).
+
+If the build was successful, there will be a <em>Pong.exe</em> file in the<em>dist/</em>.
