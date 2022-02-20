@@ -6,6 +6,10 @@ This repo was set up to demonstrate how to build, share, and package a kivy pyth
 
 ### Set UP
 
+#### Ensure Correct Version of Python
+
+This project requires a specific version python to run properly. Reference the required version in this project's <em>Pipfile</em> and ensure that it is installed on your system ([Python Downloads](https://www.python.org/downloads/)). It is not required to be the default python install on your system, it just needs to be present. Take note of its install location to use later.
+
 #### Install Pipenv
 
 This project uses pipenv for dependency and environment management.
@@ -14,11 +18,13 @@ From a terminal run: `pip install pipenv`. Detailed installation instructions ca
 
 #### Download Source Code and Set Up Local Environment
 
+With pipenv, create a virtual environment in the project's directory using the required python version.
+
 1. Clone this repository: `git clone https://github.com/CaseyMatthews/kivy-pong-tutorial.git`
 
 2. Navigate to the project directory.
 
-3. Initialize the pipenv virtual environment: `pipenv shell`.
+3. Initialize the pipenv virtual environment: `pipenv install --python path/to/python/install/python.exe`. Replace the path with python's install location as previously noted.
 
 ---
 
