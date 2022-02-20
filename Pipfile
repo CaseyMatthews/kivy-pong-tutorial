@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 kivy = "*"
+pyinstaller = "*"
+"kivy-deps.sdl2" = "*"
 
 [dev-packages]
 

@@ -1,6 +1,6 @@
 ### Summary
 
-This repo was set up to demonstrate how to build, share, and package a kivy python project using pipenv for package management. It is using the basic kivy pong tutorial available on the kivy website: [Kivy Pong Tutorial](https://kivy.org/doc/stable/tutorials/pong.html).
+This repo was set up to demonstrate how to build, share, and package a kivy python project using pipenv for package management and pyinstaller for bundling. It is using the basic kivy pong tutorial available on the kivy website: [Kivy Pong Tutorial](https://kivy.org/doc/stable/tutorials/pong.html). This project contains the source for the kivy pong app and instructions to package it into a executable for Windows.
 
 ---
 
@@ -8,7 +8,7 @@ This repo was set up to demonstrate how to build, share, and package a kivy pyth
 
 #### Ensure Correct Version of Python
 
-This project requires a specific version python to run properly. Reference the required version in this project's <em>Pipfile</em> and ensure that it is installed on your system ([Python Downloads](https://www.python.org/downloads/)). It is not required to be the default python install on your system, it just needs to be present. Take note of its install location to use later.
+This project requires a specific version python to run properly. Reference the required version in this project's <em>Pipfile</em> and ensure that it is installed on your system ([Python Downloads](https://www.python.org/downloads/)). It is not required to be the default python install, it just needs to be present. Take note of its install location to use later.
 
 #### Install Pipenv
 
@@ -51,3 +51,9 @@ If your IDE is not resolving packages installed via pipenv, then you may need to
 #### Run the App
 
 Terminal: `python main.py`
+
+#### Build the App
+
+Terminal: `python -m PyInstaller Pong.spec`
+
+If pyinstaller complains about missing kivy dependencies, you may need to install explicitly to your virtual environment (e.g. `pipenv install kivy_deps.sdl2`).
