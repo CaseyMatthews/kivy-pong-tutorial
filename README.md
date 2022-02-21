@@ -24,7 +24,7 @@ With pipenv, create a virtual environment in the project's directory using the r
 
 2. Navigate to the project directory.
 
-3. Initialize the pipenv virtual environment: `pipenv install --python path/to/python/install/python.exe`. Replace the path with python's install location as previously noted.
+3. Initialize the pipenv virtual environment: `pipenv install --dev --python path/to/python/install/python.exe`. Replace the path with python's install location as previously noted.
 
 4. Install missing Kivy dependency (required for bundling): `pipenv install kivy_deps.sdl2`
 

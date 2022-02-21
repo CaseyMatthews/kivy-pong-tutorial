@@ -5,10 +5,11 @@ name = "pypi"
 
 [packages]
 kivy = "*"
-pyinstaller = "*"
 "kivy-deps.sdl2" = "*"
 
 [dev-packages]
+pytest = "*"
+pyinstaller = "*"
 
 [requires]
 python_version = "3.9.10"
